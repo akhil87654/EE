@@ -1,0 +1,363 @@
+3.Create a form by using various attributes of the input tags (text box, multiline textbox,
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic Form</title>
+</head>
+<body text="blue" bgcolor="pink">
+<form method="post">
+<p>
+<label> Name
+<input type="text">
+</label>
+</p>
+<p>
+<label> Description
+<textarea cols="30" rows="10"></textarea>
+</label>
+</p>
+<p>
+<label> Gender :
+<label> Male
+<input type="radio" name="gender" value="male">
+</label>
+<label> Female
+<input type="radio" name="gender" value="female">
+</label>
+</label>
+</p>
+<p>
+<label> Interests :
+<label> Sports
+<input type="checkbox" name="interests" value="sports">
+</label>
+<label> Music
+<input type="checkbox" name="interests" value="music">
+</label>
+</label>
+</p>
+<p>
+<input type="submit" value="submit">
+</p>
+</form>
+</body>
+</html>
+
+4.Create a simple HTML page by using some of the basic tags (hyperlink, marquee,
+<!DOCTYPE html>
+<html>
+<head>
+<title>Amazon Shopping</title>
+</head>
+<body>
+<h1>Welcome to Amazon Shopping Page!</h1>
+<p>
+<a href="https://www.amaazon.in/">Visit Amazon India</a>
+for exciting offers and deals
+</p>
+<marquee>Check out the interest deals and offers on Amazon!</marquee>
+<img src="https://www.gstatic.com/webp/gallery3/1.sm.pnh">
+</body>
+</html>
+5.Create a web page with multiple types of style sheet used in a single page
+h3{
+color : darkgreen;
+font-family: Arial, sans-serif;
+}
+p.para_2{
+color: darkblue;
+font-family: Verdana, sans-serif;
+}
+==============================
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Page with different CSS Styles</title>
+<style>
+h2{
+color:red;
+font-family: 'Times New Roman', Times, serif;
+}
+p.para_1{
+color:orange;
+font-family: Georgia, serif;
+}
+</style>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<h1 style="color: blue; font-family: Helvetica;">This is heading with inline CSS</h1>
+<p style="color: purple; font-family: Helvetica;">This is a paragraph with inline CSS</p>
+
+<h2>This is heading with inline CSS</h2>
+<p class="para_1">This is a paragraph with inline CSS</p>
+<h3>This is heading with external CSS</h3>
+<p class="para_2">This is a paragraph with external CSS</p>
+</body>
+</html>
+
+7.Create Time-Table using table tag
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time Table</title>
+</head>
+<body bgcolor="black" text="white">
+<h2 align="center">Weekly Class Schedule</h2>
+<table align="center">
+<thead>
+<th>Day</th>
+<th>09:00 - 10:00</th>
+<th>10:00 - 11:00</th>
+<th>11:00 - 12:00</th>
+</thead>
+<tr>
+<td>Monday</td>
+<td>IT</td>
+<td>SE</td>
+<td>DAA</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>IT</td>
+<td>DAA</td>
+<td>SE</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>SE</td>
+<td>IT</td>
+<td>DAA</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>SE</td>
+<td>DAA</td>
+<td>IT</td>
+</tr>
+
+<tr>
+<td>Friday</td>
+<td>DAA</td>
+<td>SE</td>
+<td>DAA</td>
+</tr>
+</table>
+</body>
+</html>
+8.Creation of Frames in browser window using HTML.
+<!DOCTYPE html>
+<html>
+<body bgcolor="pink">
+<h2>Content</h2>
+<p>Welcome to our Indian food restaurant!</p>
+</body>
+</html>
+=================
+<!DOCTYPE html>
+<html>
+<body bgcolor="yellow">
+<h2>Info</h2>
+<p>We are located at Main Street and open from 10am to 10pm everyday</p>
+</body>
+</html>
+================
+<!DOCTYPE html>
+<html>
+<body bgcolor="green">
+<h2>Menu</h2>
+<ul>
+<li>Biriyani</li>
+<li>Butter Chicken</li>
+<li>Paneer Tikka</li>
+</ul>
+</body>
+</html>
+==========Main pro=====
+<!DOCTYPE html>
+<html>
+<frameset cols="20%, 60%, 20%">
+<frame src="menu.html">
+<frame src="content.html">
+<frame src="info.html">
+</frameset>
+</html>
+
+9.Write a java script program to create dialogue boxes using alert, confirm and prompt
+methods
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newsletter Subscription</title>
+<script>
+function subscribeNewsletter(){
+alert("Welcome to our website");
+var subsribe = confirm("Would you like to subscribe to our newsletter?");
+if(subsribe){
+var email = prompt("Please enter your email address");
+if(email){
+alert("You will receive a confirmation email at " + email);
+}
+else {
+alert("You didn't provide an email.");
+}
+}
+else {
+alert("No problem, you can subscribe later");
+}
+}
+</script>
+</head>
+<body onload="subscribeNewsletter()">
+<h1>Welcome to our website!</h1>
+</body>
+</html>
+
+10.Write a java script program on Form Validations.
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm(){
+var username = document.forms['registration']['username'].value;
+var email = document.forms['registration']['email'].value;
+var password = document.forms['registration']['password'].value;
+if(username == "" || email == "" || password == ""){
+alert("all fields must be filled out");
+return false;
+}
+if(password.length<6){
+alert("Password must be at least 6 characters long.");
+return false;
+}
+
+alert("Registration successful");
+return true;
+}
+</script>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form name="registration" onsubmit="return validateForm()">
+Username : <input type="text" name="username"><br>
+Email : <input type="email" name="email"><br>
+Password : <input type="password" name="password"><br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
+11. Write a java script program to perform four arithmetic operations: Addition, Subtraction,
+Multiplication and Division on two numbers.
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function performOperation(){
+var num1 = parseFloat(document.getElementById("n1").value);
+var num2 = parseFloat(document.getElementById("n2").value);
+document.getElementById('add').innerHTML = "Addition : " + (num1 + num2);
+document.getElementById('sub').innerHTML = "Subtraction : " + (num1 - num2);
+document.getElementById('mul').innerHTML = "Multiplication : " + (num1 * num2);
+document.getElementById('div').innerHTML = "Division : " + (num1 / num2);
+}
+</script>
+</head>
+<body>
+<h1>Arithmetic Operations</h1>
+<form>
+Number 1 : <input type="number" id="n1"><br>
+Number 2 : <input type="number" id="n2"><br>
+<input type="button" value="Calculate" onclick="performOperation()">
+</form>
+<p id="add"></p>
+<p id="sub"></p>
+<p id="mul"></p>
+<p id="div"></p>
+</body>
+</html>
+
+12.Create a web site of our College.
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+</head>
+<body>
+<h1>About Us</h1>
+<p>Harsha Institutions was founded in 2004 with the aim to provide quality education</p>
+</body>
+</html>
+=============
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+</head>
+<body>
+<h1>Contact Us</h1>
+<p>Address : Nelmangala, Karnataka</p>
+<p>Phone : 42934432 </p>
+<p>Email : harshainstitutions@gmail.com</p>
+</body>
+</html>
+============main pro====
+<!DOCTYPE html>
+<html>
+<head>
+<title>Courses</title>
+</head>
+<body>
+<h1>Courses</h1>
+<ul>
+<li>BCA</li>
+<li>MCA</li>
+</ul>
+</body>
+</html>
+===========
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harsha Institutions</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+text-align: center;
+}
+
+header{
+background-color:azure;
+padding: 20px;
+}
+nav{
+margin: 20px 0;
+}
+nav a{
+margin: 0 15px;
+}
+</style>
+</head>
+<body>
+<header>
+<img
+src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2
+Fth%3Fid%3DOIP.14RRnRKRMLGL2CgADy11TAHaDS%26pid%3DApi&f=1&ipt=4fa430138
+8da7fec3b2441217a2e61f8560abe95d02ea7f79bfbb56331c4b755&ipo=images"
+width="50%">
+<h1>Harsha Institute of Management Studies</h1>
+<p>Nelmangala, Karnataka</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="courses.html">Course</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+<main>
+<h2>Welcome to Harsha Institute of Management Studies</h2>
+<p>We provide quality education</p>
+</main>
+</body>
+</html>
+
+
