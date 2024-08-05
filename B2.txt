@@ -1,0 +1,145 @@
+1.
+
+Demonstrate e-mail working (Sending, Receiving, Forward)
+
+Sending E - Mail
+Step 1: Log in to your email using any web browser like Crome, Firefox, etc.,
+Step 2: Click on Compose Button. This will open a new pop-up window where you can compose
+your email.
+
+Step 3: Mention the recipient’s mail ID in “To”. (If required, use "Cc" or "Bcc" to include others)
+
+Step 4: Write a subject of email
+
+Step 5: Compose the body of your message with necessary “attachements”
+
+Body of the
+message
+
+Attachment
+
+Step 6: Send the mail by clicking on “Send” Button
+
+Step 7: Check the “Sent Items” to confirm whether the mail has been sent or not
+
+Receiving E - Mail:
+Step 1: Click on “Inbox” to check received mails.
+
+Forwarding E -mail:
+Step 1: Open the mail which is to be forwarded to others and click on (To right corner of the mail) to
+find the forward option
+
+Step 2: Click ok forward button
+
+Step 3: Type the recipient’s mail id in “To” and click on “Send” button to forward the mail.
+
+2. How to create, organize meeting in Zoom/Google meet
+Step 1: Log in to your email using any web browser like Crome, Firefox, etc.,
+Step 2: Click on
+
+Step 3: Click on
+
+icon (appears in top right corner of the window) to select meet app
+
+icon to launch new meeting in three different options.
+
+Option – 1 - Create a meeting for later
+Step 4: Click on
+meeting code can be reused whenever we need in future)
+
+icon and copy the meeting code.(Same
+
+Step 5: Enter the last 10-digit code which was copied in the last step. Click on “Join”
+
+Step 6: Before joining the meeting click on “Allow microphone and camera” to make the people to
+hear and see you.
+
+Step 7: Click in “Join now” Button
+
+Step 8: Admit the participants to join the meeting
+
+Step 9: To present the topic to the participant, click in “Present now” icon
+
+Step 10: Select to appropriate document and click on “Share” button.
+
+Step 11: Now the document will get presented to the participants.
+
+Step 12: To exit from the meeting, click on “Leave call” Button
+
+Option – 2 – Start an instance meeting.
+(This meeting code cannot be reused)
+Step 1: Click on
+
+button to start an instant meeting
+
+Step 2: Copy the meeting code and share it to the participants.
+
+Option – 3 – Schedule in Google Calendar
+Step 1: Click on
+
+button to schedule the meeting to be conducted in future.
+
+Step 2: Add Title, date, time, and description. Click on “Save” button.
+
+Step 3: Now event is saved in the calendar.
+
+3. Create a form by using various attributes of the input tags (text box, multiline
+textbox, option button, check box)
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="color:red">The various attributes of the input tags</h1>
+<form>
+Name: <input type="text" id="fname" name="fname">
+<br><br>
+Gender:
+<input type="radio" name="gender" value="F"> Female
+<input type="radio" name="gender" value="M"> Male
+<br><br>
+Address:
+<br><br>
+<textarea rows="5" cols="50" name="address"> Enter address here... </textarea>
+<br><br>
+Select a Course:
+<br> <br>
+<input type="checkbox" name="C++" value="on"> C++
+<br>
+<input type="checkbox" name="C#" value="on"> C#
+<br>
+<input type="checkbox" name="JAVA" value="on"> JAVA
+<br><br>
+<input type="button" onclick="alert('Saved!!!')" value="Click Me!">
+</form>
+<br><br>
+</body>
+</html>
+
+Input form:
+
+Output form:
+
+4. Create a simple HTML page by using some of the basic tags (hyperlink, marquee,
+image)
+
+<html>
+<head>
+<title> HTML Basic tags</title>
+<body style="background-color:powderblue;">
+<h1>HTML is the basis for web pages. Understanding HTML is essential for a front-end
+developer. Take HTML courses online to learn the skills.</h1>
+<a href ="https://www.edx.org/">Click here to discover more details</a>
+<br><br>
+<img src="edx.jpg" width="200" height="200">
+<marquee scrollamount="8" style="color:red;" > Career opportunities : Digital designer
+Web architect Web design specialist
+Web designer
+Web developer
+Webmaster </marque>
+</body>
+</head>
+</html>
+
+Output:
+
+
